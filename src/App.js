@@ -5,51 +5,82 @@ import crossword from './crossword.json';
 const App = () => {
 
   const [ direction, setDirection ] = useState('across');
-  const [ wordEnd, setWordEnd ] = useState(0);
-  const [ wordBeg, setWordBeg ] = useState(0);
+  const [ wordCoords, setWordCoords ] = useState([0, 0]);
   const [ currentCoords, setCurrentCoords ] = useState([0,0]);
 
   // USE EFFECT IF FIRST SQUARE IS BLACK CHANGE CURRENT COORDS
   // USE EFFECT SETUP KEYPRESS LISTENER
-  useEffect(() => {
-    let newWordEnd;
-    let newWordBeg;
-    let counter = (direction === 'across') ? currentCoords[1] : currentCoords[0];
-    let currentSquare;
-    if (direction === 'across') {
-      while (!newWordEnd) {
-        currentSquare = crossword.board[currentCoords[0]][counter]
-        if (!currentSquare || currentSquare === "#BlackSquare#") {
-          newWordEnd = counter - 1;
-          console.log(wordEnd)
-          setWordEnd(newWordEnd);
-        }
-        counter++
+  // useEffect(() => {
+
+  // }, [currentCoords, direction])
+
+  const setSelected = (row, col) => {
+    // Toggle direction if clicking active sqaure
+    let newDirection = direction
+    if (row === currentCoords[0] && col === currentCoords[1]) {
+      newDirection = direction === 'across' ? 'down' : 'across';
+    }
+    let wordEnd = searchForCell(row, col, newDirection, 'INCREMENT')
+    let wordBeg = searchForCell(row, col, newDirection, 'DECREMENT')
+    setWordCoords([wordBeg, wordEnd])
+    setCurrentCoords([row, col])
+    setDirection(newDirection)
+  }
+
+  // Search for end or beginnging of a word
+  const searchForCell = (row, col, direction, incOrDec) => {
+    let cell;
+    let endCounter = (direction === 'across') ? col : row;
+    let currentCell;
+    while (!cell) {
+      if (direction === 'across') {
+        currentCell = crossword.board[row][endCounter];
+      } else {
+        try {
+          currentCell = crossword.board[parseInt(endCounter)][col]
+        } catch(err) {currentCell = undefined;}
+      }
+      if (!currentCell || currentCell === "#BlackSquare#") {
+        cell = incOrDec === 'INCREMENT' ? endCounter - 1 : endCounter + 1;
+        return cell;
+      }
+      if (incOrDec === 'INCREMENT') {
+        endCounter++;
+      } else {
+        endCounter--;
       }
     }
-  }, [currentCoords, direction])
-
+  }
 
   let rows = Object.keys(crossword.board).map((row, rowNum) => {
     return (
       <tr className='row'>
         {crossword.board[row].map((cell, colNum) => {
           let black = cell === '#BlackSquare#'
-
+          let highlighted = false;
+          if (direction === 'across') {
+            if ((colNum >= wordCoords[0] && colNum <= wordCoords[1]) && rowNum === currentCoords[0]) {
+              highlighted = true;
+            }
+          } else {
+            if ((rowNum >= wordCoords[0] && rowNum <= wordCoords[1]) && colNum === currentCoords[1]) {
+              highlighted = true;
+            }
+          }
           return (black
             ? <td className='black'></td>
             : <Cell
-                highlighted={colNum === wordEnd && rowNum === currentCoords[0]}
+                highlighted={highlighted}
                 answer={cell}
                 coords={[rowNum, colNum]}
-                click={() => setCurrentCoords([rowNum, colNum])}
+                click={() => setSelected(rowNum, colNum)}
               />
           )
         })}
       </tr>
     )
   })
-  console.log("CURRENT COORDS: ", currentCoords)
+  console.log('render')
   return (
     <div className="page">
       <table>
@@ -72,5 +103,9 @@ const App = () => {
     </div>
   );
 }
+
+// position = [row, col]
+// incOrDec = increment or decrement
+
 
 export default App;
