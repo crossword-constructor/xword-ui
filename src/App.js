@@ -5,9 +5,24 @@ import "./App.css";
 
 // Converts the object structure of board to store guesses next to answers
 const buildPlayableBoard = board => {
-  return board.map(row => {
-    return row.map(col => {
-      return { guess: "", answer: col };
+  let currentNumber = 1;
+  return board.map((row, rowCount) => {
+    return row.map((col, colCount) => {
+      let number = null;
+      if (col === "#BlackSquare#") {
+        return { answer: col };
+      }
+      // Check if this cell gets a number
+      else if (
+        rowCount === 0 ||
+        row[colCount - 1] === "#BlackSquare#" ||
+        board[rowCount - 1][colCount] === "#BlackSquare#"
+      ) {
+        console.log("incrementing current counte");
+        number = currentNumber;
+        currentNumber++;
+      }
+      return { guess: "", answer: col, number: number };
     });
   });
 };
@@ -210,6 +225,7 @@ const App = () => {
               focus={currentCoords[0] === rowNum && currentCoords[1] === colNum}
               answer={cell.answer}
               guess={cell.guess}
+              number={cell.number}
               coords={[rowNum, colNum]}
               click={() => clickListener(rowNum, colNum)}
             />

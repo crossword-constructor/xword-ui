@@ -184,6 +184,7 @@ input {
 }
 
 .cell {
+  position: relative;
   border: 1px solid black;
   height: 38px;
   width: 38px;
@@ -217,6 +218,12 @@ input {
   font-size: 22px;
 }
 
+.number {
+  position: absolute;
+  font-size: 12px;
+  top: 1px;
+  left: 1px;
+}
 .acrossClues {
   border: 1px solid #a0eaff;
   display: flex;

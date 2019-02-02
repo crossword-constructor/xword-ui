@@ -10,6 +10,7 @@ const Cell = ({ answer, number, guess, click, focus, highlighted }) => {
   }
   return (
     <td onMouseDown={click} className="cell">
+      <div className="number">{number}</div>
       <div
         style={{
           background
