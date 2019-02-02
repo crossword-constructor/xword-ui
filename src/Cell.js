@@ -1,27 +1,25 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
-import './App.css';
-const Cell = ({answer, number, click, focus, highlighted}) => {
-  const [guess, setGuess] = useState(null)
-  const [rebus, setRebus] = useState(false)
+import "./App.css";
+const Cell = ({ answer, number, guess, click, focus, highlighted }) => {
   let background = "#F6F6F6";
   if (focus) {
-    background = "yellow"
+    background = "yellow";
   } else if (highlighted) {
-    background = "#a0effb"
+    background = "#a0effb";
   }
   return (
     <td onMouseDown={click} className="cell">
-      <div style={{
-        background,
-        width: "100%",
-        height: '100%',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        }} className='cellInput' onChange={(event) => {setGuess(event.target.value)}} type='text'>{answer}</div>
+      <div
+        style={{
+          background
+        }}
+        className="cellInput"
+      >
+        {guess}
+      </div>
     </td>
-  )
-}
+  );
+};
 
 export default Cell;

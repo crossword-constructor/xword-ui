@@ -3,13 +3,30 @@ import Cell from "./Cell";
 import crossword from "./crossword.json";
 import "./App.css";
 
+// Converts the object structure of board to store guesses next to answers
+const buildPlayableBoard = board => {
+  return board.map(row => {
+    return row.map(col => {
+      return { guess: "", answer: col };
+    });
+  });
+};
+
 const App = () => {
   const [direction, setDirection] = useState("across");
   const [wordCoords, setWordCoords] = useState([0, 0]);
   const [currentCoords, setCurrentCoords] = useState([0, 0]);
   const [rebusPosition, setRebus] = useState(null);
+  const [board, updateBoard] = useState([]);
 
   useEffect(() => {
+    let board = buildPlayableBoard(crossword.board);
+    updateBoard(board);
+    console.log(board);
+  }, []);
+
+  useEffect(() => {
+    console.log("init listener");
     document.addEventListener("keydown", keyListener);
     // setSelected(currentCoords[0], currentCoords[0])
     return () => {
@@ -17,35 +34,61 @@ const App = () => {
     };
   });
 
-  async function keyListener(event) {
+  function keyListener(event) {
     let newDirection = direction;
+    let code = event.code;
     let [row, col] = currentCoords;
+    let keyCode = event.keyCode;
     let nextCoords = [row, col];
-    if (event.code === "Insert") {
+    if (code === "Insert") {
       return setRebus(true);
+      // Check for change of direction
+    } else if (/^[a-z0-9._]+$/i.test(event.key) && event.key.length === 1) {
+      // INSERT GUESS
+      let newBoard = { ...board };
+      newBoard[row][col].guess = event.key;
+      console.log("up[dating board ", event.key);
+      updateBoard(newBoard);
+      // After inserting a letter move to the next position by making this key listener think the arrow key was pressed
+      if (direction === "down") code = "ArrowDown";
+      else code = "ArrowRight";
     }
-    // Check for change of direction
     if (
-      (event.code === "ArrowRight" || event.code === "ArrowLeft") &&
+      (code === "ArrowRight" || code === "ArrowLeft") &&
       direction === "down"
     ) {
       newDirection = "across";
     } else if (
-      (event.code === "ArrowDown" || event.code === "ArrowUp") &&
+      (code === "ArrowDown" || code === "ArrowUp") &&
       direction === "across"
     ) {
       newDirection = "down";
-    } else {
+    } else if (
+      code === "ArrowRight" ||
+      code === "ArrowLeft" ||
+      code === "ArrowDown" ||
+      code === "ArrowUp"
+    ) {
       let nextCell = searchForValidCell(
         row,
         col,
         direction,
-        event.code,
+        code,
         crossword.board
       );
-      return setSelected(nextCell[0], nextCell[1], newDirection);
+      let { wordBeg, wordEnd } = setSelected(
+        nextCell[0],
+        nextCell[1],
+        newDirection
+      );
+      setWordCoords([wordBeg, wordEnd]);
+      setCurrentCoords(nextCell);
+      return;
     }
-    setSelected(row, col, newDirection);
+    let { wordBeg, wordEnd } = setSelected(row, col, newDirection);
+    setCurrentCoords([row, col]);
+    setDirection(newDirection);
+    setWordCoords([wordBeg, wordEnd]);
 
     // console.log('should not see this')
     // updatePosition(increment, decrement)
@@ -55,9 +98,7 @@ const App = () => {
     // Toggle direction if clicking active sqaure
     let wordEnd = searchForBoundaryCell(row, col, newDirection, "INCREMENT");
     let wordBeg = searchForBoundaryCell(row, col, newDirection, "DECREMENT");
-    setWordCoords([wordBeg, wordEnd]);
-    setCurrentCoords([row, col]);
-    setDirection(newDirection);
+    return { wordBeg, wordEnd };
   };
 
   // Take the current position, direction, keypressed and finds the next cell in that row or col that isn't a blacksquare.
@@ -132,14 +173,17 @@ const App = () => {
       // toggle direction
       newDirection = direction === "across" ? "down" : "across";
     }
-    setSelected(rowNum, colNum, newDirection);
+    let { wordBeg, wordEnd } = setSelected(rowNum, colNum, newDirection);
+    setCurrentCoords([rowNum, colNum]);
+    setDirection(newDirection);
+    setWordCoords([wordBeg, wordEnd]);
   };
 
-  let rows = Object.keys(crossword.board).map((row, rowNum) => {
+  let rows = Object.keys(board).map((row, rowNum) => {
     return (
       <tr className="row">
-        {crossword.board[row].map((cell, colNum) => {
-          let black = cell === "#BlackSquare#";
+        {board[row].map((cell, colNum) => {
+          let black = cell.answer === "#BlackSquare#";
           let highlighted = false;
           if (direction === "across") {
             if (
@@ -164,7 +208,8 @@ const App = () => {
             <Cell
               highlighted={highlighted}
               focus={currentCoords[0] === rowNum && currentCoords[1] === colNum}
-              answer={cell}
+              answer={cell.answer}
+              guess={cell.guess}
               coords={[rowNum, colNum]}
               click={() => clickListener(rowNum, colNum)}
             />
