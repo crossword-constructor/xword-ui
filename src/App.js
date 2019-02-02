@@ -17,21 +17,35 @@ const App = () => {
     };
   });
 
-  function keyListener(event) {
+  async function keyListener(event) {
+    let newDirection = direction;
     let [row, col] = currentCoords;
+    let nextCoords = [row, col];
     if (event.code === "Insert") {
       return setRebus(true);
     }
-    console.log(row, col);
-    let { nextCoords, newDirection } = getNextCoords(
-      event.code,
-      row,
-      col,
-      direction,
-      crossword.board
-    );
-    console.log(nextCoords, newDirection);
-    setSelected(nextCoords[0], nextCoords[1], newDirection);
+    // Check for change of direction
+    if (
+      (event.code === "ArrowRight" || event.code === "ArrowLeft") &&
+      direction === "down"
+    ) {
+      newDirection = "across";
+    } else if (
+      (event.code === "ArrowDown" || event.code === "ArrowUp") &&
+      direction === "across"
+    ) {
+      newDirection = "down";
+    } else {
+      let nextCell = searchForValidCell(
+        row,
+        col,
+        direction,
+        event.code,
+        crossword.board
+      );
+      return setSelected(nextCell[0], nextCell[1], newDirection);
+    }
+    setSelected(row, col, newDirection);
 
     // console.log('should not see this')
     // updatePosition(increment, decrement)
@@ -39,9 +53,6 @@ const App = () => {
 
   const setSelected = (row, col, newDirection) => {
     // Toggle direction if clicking active sqaure
-    if (row === currentCoords[0] && col === currentCoords[1]) {
-      newDirection = newDirection === "across" ? "down" : "across";
-    }
     let wordEnd = searchForBoundaryCell(row, col, newDirection, "INCREMENT");
     let wordBeg = searchForBoundaryCell(row, col, newDirection, "DECREMENT");
     setWordCoords([wordBeg, wordEnd]);
@@ -49,50 +60,41 @@ const App = () => {
     setDirection(newDirection);
   };
 
-  const getNextCoords = (key, row, col, direction, board) => {
-    console.log(row, col);
-    let newDirection;
-    if (direction === "across") {
-      if (key === "ArrowLeft") {
-        col -= 1;
-      } else if (key === "ArrowRight") {
-        let [newRow, newCol] = searchForValidCell(
-          row,
-          col,
-          direction,
-          "INCREMENT",
-          board
-        );
-        return { nextCoords: [newRow, newCol], newDirection: direction };
-      } else if (key === "ArrowUp" || key === "ArrowDown") {
-        return { nextCoords: [row, col], newDirection: "down" };
-      }
-    } else if (direction === "down") {
-      if (key === "ArrowUp") {
-      } else if (key === "ArrowDown") {
-      } else if (key === "ArrowLeft" || key === "ArrowRight") {
-        return setDirection("across");
-      }
-    }
-  };
-
-  const searchForValidCell = (row, col, direction, incOrDec, board) => {
+  // Take the current position, direction, keypressed and finds the next cell in that row or col that isn't a blacksquare.
+  // If it reaches the end of the board it goes back to the beginning
+  const searchForValidCell = (row, col, direction, key, board) => {
     let validCellFound;
     while (!validCellFound) {
-      console.log(row, col);
       if (direction === "across") {
-        if (incOrDec === "INCREMENT") {
+        if (key === "ArrowRight") {
           col += 1;
           if (!board[row][col]) {
             col = 0;
           }
-          if (board[row][col] === "#BlackSquare#") {
-            validCellFound = false;
-          } else {
-            validCellFound = true;
-            return [row, col];
+        } else {
+          col -= 1;
+          if (!board[row][col]) {
+            col = board[0].length - 1;
           }
         }
+      } else if (direction === "down") {
+        if (key === "ArrowDown") {
+          row += 1;
+          if (!board[row]) {
+            row = 0;
+          }
+        } else {
+          row -= 1;
+          if (!board[row]) {
+            row = board.length - 1;
+          }
+        }
+      }
+      if (board[row][col] === "#BlackSquare#") {
+        validCellFound = false;
+      } else {
+        validCellFound = true;
+        return [row, col];
       }
     }
   };
@@ -122,6 +124,15 @@ const App = () => {
         endCounter--;
       }
     }
+  };
+
+  const clickListener = (rowNum, colNum) => {
+    let newDirection = direction;
+    if (rowNum === currentCoords[0] && colNum === currentCoords[1]) {
+      // toggle direction
+      newDirection = direction === "across" ? "down" : "across";
+    }
+    setSelected(rowNum, colNum, newDirection);
   };
 
   let rows = Object.keys(crossword.board).map((row, rowNum) => {
@@ -155,8 +166,7 @@ const App = () => {
               focus={currentCoords[0] === rowNum && currentCoords[1] === colNum}
               answer={cell}
               coords={[rowNum, colNum]}
-              click={() => setSelected(rowNum, colNum, direction)}
-              onKeyDown={keyListener}
+              click={() => clickListener(rowNum, colNum)}
             />
           );
         })}
