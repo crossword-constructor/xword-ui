@@ -51,12 +51,13 @@ input {
 
 .board {
   border-collapse: collapse;
+  font-size: 20px;
 }
 
 .cell {
   border: 1px solid black;
-  height: 30px;
-  width: 30px;
+  height: 38px;
+  width: 38px;
   margin: 0;
 }
 
@@ -82,10 +83,11 @@ input {
   height: 80%;
   display: flex;
   margin-left: 30px;
+  font-size: 22px;
 }
 
 .acrossClues {
-  border: 1px solid blue;
+  border: 1px solid #a0eaff;
   display: flex;
   flex-flow: column;
   wrap: wrap;
