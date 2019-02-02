@@ -218,12 +218,19 @@ input {
   font-size: 22px;
 }
 
+.reveal {
+  position: fixed;
+  bottom: 28px;
+  right: 200px;
+}
+
 .number {
   position: absolute;
   font-size: 12px;
   top: 1px;
   left: 1px;
 }
+
 .acrossClues {
   border: 1px solid #a0eaff;
   display: flex;

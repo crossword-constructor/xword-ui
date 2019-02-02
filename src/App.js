@@ -33,6 +33,7 @@ const App = () => {
   const [currentCoords, setCurrentCoords] = useState([0, 0]);
   const [rebusPosition, setRebus] = useState(null);
   const [board, updateBoard] = useState([]);
+  const [showAnswers, toggleAnswers] = useState(false);
 
   useEffect(() => {
     let board = buildPlayableBoard(crossword.board);
@@ -226,6 +227,7 @@ const App = () => {
               answer={cell.answer}
               guess={cell.guess}
               number={cell.number}
+              showAnswer={showAnswers}
               coords={[rowNum, colNum]}
               click={() => clickListener(rowNum, colNum)}
             />
@@ -255,6 +257,9 @@ const App = () => {
             })}
         </div>
       </div>
+      <button onClick={() => toggleAnswers(!showAnswers)} className="reveal">
+        {showAnswers ? "Hide Answers" : "Reveal Answers"}
+      </button>
     </div>
   );
 };
