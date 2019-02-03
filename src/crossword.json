@@ -1,1365 +1,1532 @@
-
 {
-  "_id" : "5c466e78e9a02d51b011b10c",
-  "title" : "PERSONS, PLACES AND THINGS",
-  "date" : "1/14/1951",
-  "publisher" : "New York Times",
-  "editor" : "Margaret Farrar",
-  "author" : "Eugene T. Maleska",
-  "dimensions" : {
-      "rows" : 21,
-      "columns" : 21
-  },
-  "clues" : [
-      {
-          "_id" : "5c466e79e9a02d51b011b2e1",
-          "clue" : "5c4668b5e9a02d51b00d8684",
-          "answer" : "5c466892e9a02d51b00d5aaa",
-          "position" : "1A"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b2e0",
-          "clue" : "5c466b21e9a02d51b00ffca0",
-          "answer" : "5c4668e0e9a02d51b00dc5ad",
-          "position" : "6A"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b2df",
-          "clue" : "5c46694de9a02d51b00e4ee8",
-          "answer" : "5c4668a5e9a02d51b00d7059",
-          "position" : "12A"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b2de",
-          "clue" : "5c46689ee9a02d51b00d66de",
-          "answer" : "5c466e79e9a02d51b011b113",
-          "position" : "18A"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b2dd",
-          "clue" : "5c46693ce9a02d51b00e3a9d",
-          "answer" : "5c466b0ae9a02d51b00feabd",
-          "position" : "20A"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b2dc",
-          "clue" : "5c4668d0e9a02d51b00dae36",
-          "answer" : "5c466e79e9a02d51b011b118",
-          "position" : "22A"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b2db",
-          "clue" : "5c466bcbe9a02d51b0106cfd",
-          "answer" : "5c4669f6e9a02d51b00efb5d",
-          "position" : "23A"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b2da",
-          "clue" : "5c4668bae9a02d51b00d8e13",
-          "answer" : "5c466888e9a02d51b00d4c28",
-          "position" : "25A"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b2d9",
-          "clue" : "5c4668c1e9a02d51b00d987c",
-          "answer" : "5c466892e9a02d51b00d5b8b",
-          "position" : "26A"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b2d8",
-          "clue" : "5c466b53e9a02d51b0101e64",
-          "answer" : "5c4668f2e9a02d51b00ddb73",
-          "position" : "27A"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b2d7",
-          "clue" : "5c466cc8e9a02d51b010f6aa",
-          "answer" : "5c466919e9a02d51b00e0f02",
-          "position" : "29A"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b2d6",
-          "clue" : "5c466e79e9a02d51b011b125",
-          "answer" : "5c466896e9a02d51b00d60d6",
-          "position" : "30A"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b2d5",
-          "clue" : "5c46689ce9a02d51b00d6556",
-          "answer" : "5c4668b7e9a02d51b00d88f9",
-          "position" : "31A"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b2d4",
-          "clue" : "5c466894e9a02d51b00d5fbf",
-          "answer" : "5c466e79e9a02d51b011b12a",
-          "position" : "34A"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b2d3",
-          "clue" : "5c4668a9e9a02d51b00d76a6",
-          "answer" : "5c466e79e9a02d51b011b12d",
-          "position" : "36A"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b2d2",
-          "clue" : "5c4668d0e9a02d51b00dae13",
-          "answer" : "5c466938e9a02d51b00e3531",
-          "position" : "37A"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b2d1",
-          "clue" : "5c4668a9e9a02d51b00d74c3",
-          "answer" : "5c46688ce9a02d51b00d52bd",
-          "position" : "39A"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b2d0",
-          "clue" : "5c466d65e9a02d51b0113e37",
-          "answer" : "5c4668b3e9a02d51b00d83a4",
-          "position" : "41A"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b2cf",
-          "clue" : "5c466890e9a02d51b00d5973",
-          "answer" : "5c46695ce9a02d51b00e5f51",
-          "position" : "42A"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b2ce",
-          "clue" : "5c466888e9a02d51b00d4bc5",
-          "answer" : "5c46688ce9a02d51b00d53c5",
-          "position" : "43A"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b2cd",
-          "clue" : "5c4668dee9a02d51b00dc24d",
-          "answer" : "5c46691be9a02d51b00e10ce",
-          "position" : "44A"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b2cc",
-          "clue" : "5c466b87e9a02d51b01040d6",
-          "answer" : "5c466a39e9a02d51b00f3a33",
-          "position" : "47A"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b2cb",
-          "clue" : "5c466c3ee9a02d51b010b3e3",
-          "answer" : "5c46692fe9a02d51b00e2b87",
-          "position" : "50A"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b2ca",
-          "clue" : "5c466e79e9a02d51b011b140",
-          "answer" : "5c46688ce9a02d51b00d5368",
-          "position" : "52A"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b2c9",
-          "clue" : "5c466986e9a02d51b00e8ffb",
-          "answer" : "5c466e79e9a02d51b011b143",
-          "position" : "54A"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b2c8",
-          "clue" : "5c466a7ce9a02d51b00f7335",
-          "answer" : "5c46690ee9a02d51b00e00be",
-          "position" : "57A"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b2c7",
-          "clue" : "5c466d08e9a02d51b0111814",
-          "answer" : "5c466dcfe9a02d51b0116d51",
-          "position" : "58A"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b2c6",
-          "clue" : "5c46689ce9a02d51b00d643a",
-          "answer" : "5c4668ade9a02d51b00d7c1d",
-          "position" : "60A"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b2c5",
-          "clue" : "5c4668ece9a02d51b00dd522",
-          "answer" : "5c4668a2e9a02d51b00d6db9",
-          "position" : "61A"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b2c4",
-          "clue" : "5c466d8fe9a02d51b0114f21",
-          "answer" : "5c466e79e9a02d51b011b14e",
-          "position" : "62A"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b2c3",
-          "clue" : "5c466c7ee9a02d51b010d4cc",
-          "answer" : "5c466a0be9a02d51b00f0fac",
-          "position" : "64A"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b2c2",
-          "clue" : "5c466c56e9a02d51b010bf83",
-          "answer" : "5c4669c5e9a02d51b00ecbac",
-          "position" : "66A"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b2c1",
-          "clue" : "5c466926e9a02d51b00e1fa3",
-          "answer" : "5c466919e9a02d51b00e0e0e",
-          "position" : "67A"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b2c0",
-          "clue" : "5c466e79e9a02d51b011b158",
-          "answer" : "5c466e79e9a02d51b011b157",
-          "position" : "70A"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b2bf",
-          "clue" : "5c466a7fe9a02d51b00f7459",
-          "answer" : "5c466915e9a02d51b00e096e",
-          "position" : "72A"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b2be",
-          "clue" : "5c4668c9e9a02d51b00da348",
-          "answer" : "5c4668bde9a02d51b00d9470",
-          "position" : "73A"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b2bd",
-          "clue" : "5c466e3ee9a02d51b0119b16",
-          "answer" : "5c4668d9e9a02d51b00dba64",
-          "position" : "74A"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b2bc",
-          "clue" : "5c466acfe9a02d51b00fb838",
-          "answer" : "5c46688ee9a02d51b00d5551",
-          "position" : "75A"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b2bb",
-          "clue" : "5c466e79e9a02d51b011b164",
-          "answer" : "5c466e79e9a02d51b011b163",
-          "position" : "77A"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b2ba",
-          "clue" : "5c4668a2e9a02d51b00d6d87",
-          "answer" : "5c46692ae9a02d51b00e241c",
-          "position" : "79A"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b2b9",
-          "clue" : "5c466e79e9a02d51b011b169",
-          "answer" : "5c466c34e9a02d51b010adba",
-          "position" : "80A"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b2b8",
-          "clue" : "5c466e79e9a02d51b011b16c",
-          "answer" : "5c4668f4e9a02d51b00dde9c",
-          "position" : "81A"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b2b7",
-          "clue" : "5c46689ee9a02d51b00d6679",
-          "answer" : "5c46688ee9a02d51b00d54e1",
-          "position" : "83A"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b2b6",
-          "clue" : "5c466d7be9a02d51b011472d",
-          "answer" : "5c466910e9a02d51b00e0299",
-          "position" : "87A"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b2b5",
-          "clue" : "5c466ce4e9a02d51b011051c",
-          "answer" : "5c466971e9a02d51b00e77f5",
-          "position" : "90A"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b2b4",
-          "clue" : "5c466dcfe9a02d51b0116cb9",
-          "answer" : "5c466e79e9a02d51b011b175",
-          "position" : "91A"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b2b3",
-          "clue" : "5c4668a2e9a02d51b00d6c42",
-          "answer" : "5c4668eae9a02d51b00dd10f",
-          "position" : "92A"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b2b2",
-          "clue" : "5c46688ae9a02d51b00d4fc9",
-          "answer" : "5c4669fbe9a02d51b00effe2",
-          "position" : "94A"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b2b1",
-          "clue" : "5c466d74e9a02d51b01144eb",
-          "answer" : "5c4668b5e9a02d51b00d85c8",
-          "position" : "96A"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b2b0",
-          "clue" : "5c466cc4e9a02d51b010f4cf",
-          "answer" : "5c466972e9a02d51b00e7989",
-          "position" : "97A"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b2af",
-          "clue" : "5c4668a7e9a02d51b00d720b",
-          "answer" : "5c46688ee9a02d51b00d54a1",
-          "position" : "99A"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b2ae",
-          "clue" : "5c46688ce9a02d51b00d5225",
-          "answer" : "5c466907e9a02d51b00df6ff",
-          "position" : "101A"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b2ad",
-          "clue" : "5c4668b3e9a02d51b00d8261",
-          "answer" : "5c46688ee9a02d51b00d56b6",
-          "position" : "102A"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b2ac",
-          "clue" : "5c466992e9a02d51b00e9bde",
-          "answer" : "5c46697ae9a02d51b00e8260",
-          "position" : "104A"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b2ab",
-          "clue" : "5c466e79e9a02d51b011b188",
-          "answer" : "5c4669c9e9a02d51b00ecfc7",
-          "position" : "105A"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b2aa",
-          "clue" : "5c466bace9a02d51b010580a",
-          "answer" : "5c466cc8e9a02d51b010f5f4",
-          "position" : "108A"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b2a9",
-          "clue" : "5c4669f6e9a02d51b00efbd3",
-          "answer" : "5c466896e9a02d51b00d61bb",
-          "position" : "110A"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b2a8",
-          "clue" : "5c466dc5e9a02d51b011687a",
-          "answer" : "5c466e79e9a02d51b011b18f",
-          "position" : "111A"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b2a7",
-          "clue" : "5c466905e9a02d51b00df4ee",
-          "answer" : "5c466888e9a02d51b00d4c54",
-          "position" : "112A"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b2a6",
-          "clue" : "5c4668ece9a02d51b00dd522",
-          "answer" : "5c466e79e9a02d51b011b194",
-          "position" : "114A"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b2a5",
-          "clue" : "5c46689ce9a02d51b00d657c",
-          "answer" : "5c4668d9e9a02d51b00dbb00",
-          "position" : "115A"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b2a4",
-          "clue" : "5c466d31e9a02d51b0112c46",
-          "answer" : "5c466b1de9a02d51b00ff9a3",
-          "position" : "118A"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b2a3",
-          "clue" : "5c466cd7e9a02d51b010fea4",
-          "answer" : "5c466e79e9a02d51b011b19b",
-          "position" : "121A"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b2a2",
-          "clue" : "5c46694de9a02d51b00e4f8e",
-          "answer" : "5c46694de9a02d51b00e4f8d",
-          "position" : "124A"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b2a1",
-          "clue" : "5c466894e9a02d51b00d5eaf",
-          "answer" : "5c466e79e9a02d51b011b1a0",
-          "position" : "125A"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b2a0",
-          "clue" : "5c466e79e9a02d51b011b1a3",
-          "answer" : "5c466994e9a02d51b00e9d0d",
-          "position" : "126A"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b29f",
-          "clue" : "5c466890e9a02d51b00d5987",
-          "answer" : "5c466e79e9a02d51b011b1a6",
-          "position" : "127A"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b29e",
-          "clue" : "5c46688ce9a02d51b00d52ae",
-          "answer" : "5c4668d4e9a02d51b00db277",
-          "position" : "128A"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b29d",
-          "clue" : "5c46688ae9a02d51b00d4fd9",
-          "answer" : "5c4668ece9a02d51b00dd4de",
-          "position" : "1D"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b29c",
-          "clue" : "5c466a39e9a02d51b00f3998",
-          "answer" : "5c466892e9a02d51b00d5c6a",
-          "position" : "2D"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b29b",
-          "clue" : "5c466d1ee9a02d51b011227c",
-          "answer" : "5c466e79e9a02d51b011b1af",
-          "position" : "3D"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b29a",
-          "clue" : "5c4668b7e9a02d51b00d88b2",
-          "answer" : "5c466888e9a02d51b00d4af0",
-          "position" : "4D"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b299",
-          "clue" : "5c466ae9e9a02d51b00fd06e",
-          "answer" : "5c4668c1e9a02d51b00d9982",
-          "position" : "5D"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b298",
-          "clue" : "5c466e43e9a02d51b0119db1",
-          "answer" : "5c4668c5e9a02d51b00d9e6b",
-          "position" : "6D"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b297",
-          "clue" : "5c466d7be9a02d51b0114761",
-          "answer" : "5c466adde9a02d51b00fc4ce",
-          "position" : "7D"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b296",
-          "clue" : "5c46689ce9a02d51b00d6586",
-          "answer" : "5c4668a2e9a02d51b00d6e42",
-          "position" : "8D"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b295",
-          "clue" : "5c466b08e9a02d51b00fe898",
-          "answer" : "5c4668bce9a02d51b00d9165",
-          "position" : "9D"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b294",
-          "clue" : "5c46688ce9a02d51b00d532f",
-          "answer" : "5c4668a5e9a02d51b00d70e8",
-          "position" : "10D"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b293",
-          "clue" : "5c466da2e9a02d51b011561e",
-          "answer" : "5c4668aae9a02d51b00d78a4",
-          "position" : "11D"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b292",
-          "clue" : "5c4669eae9a02d51b00ef0f5",
-          "answer" : "5c46688ae9a02d51b00d4eb8",
-          "position" : "12D"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b291",
-          "clue" : "5c46688ee9a02d51b00d5690",
-          "answer" : "5c4668a5e9a02d51b00d6f30",
-          "position" : "13D"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b290",
-          "clue" : "5c4668ece9a02d51b00dd522",
-          "answer" : "5c4669cbe9a02d51b00ed192",
-          "position" : "14D"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b28f",
-          "clue" : "5c46695ae9a02d51b00e5d74",
-          "answer" : "5c46689ce9a02d51b00d639b",
-          "position" : "15D"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b28e",
-          "clue" : "5c466888e9a02d51b00d4cf9",
-          "answer" : "5c466894e9a02d51b00d5ef3",
-          "position" : "16D"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b28d",
-          "clue" : "5c4668b5e9a02d51b00d8684",
-          "answer" : "5c466bf9e9a02d51b0108be9",
-          "position" : "17D"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b28c",
-          "clue" : "5c4668ece9a02d51b00dd522",
-          "answer" : "5c4668a9e9a02d51b00d757b",
-          "position" : "19D"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b28b",
-          "clue" : "5c4668afe9a02d51b00d7dde",
-          "answer" : "5c466896e9a02d51b00d60b4",
-          "position" : "21D"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b28a",
-          "clue" : "5c466c3ee9a02d51b010b3d5",
-          "answer" : "5c466e79e9a02d51b011b1d2",
-          "position" : "24D"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b289",
-          "clue" : "5c466894e9a02d51b00d5ec6",
-          "answer" : "5c4668a5e9a02d51b00d707f",
-          "position" : "28D"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b288",
-          "clue" : "5c466b0fe9a02d51b00fef34",
-          "answer" : "5c466922e9a02d51b00e1a6c",
-          "position" : "32D"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b287",
-          "clue" : "5c466928e9a02d51b00e21e7",
-          "answer" : "5c466dbae9a02d51b011627d",
-          "position" : "33D"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b286",
-          "clue" : "5c466890e9a02d51b00d58e9",
-          "answer" : "5c466a69e9a02d51b00f64ac",
-          "position" : "35D"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b285",
-          "clue" : "5c46690ae9a02d51b00dfbb4",
-          "answer" : "5c4668d0e9a02d51b00dadc9",
-          "position" : "36D"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b284",
-          "clue" : "5c4668eee9a02d51b00dd683",
-          "answer" : "5c4668b5e9a02d51b00d86cc",
-          "position" : "37D"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b283",
-          "clue" : "5c46696fe9a02d51b00e74dc",
-          "answer" : "5c466919e9a02d51b00e0e74",
-          "position" : "38D"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b282",
-          "clue" : "5c466c9be9a02d51b010e26d",
-          "answer" : "5c46688ae9a02d51b00d4f11",
-          "position" : "40D"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b281",
-          "clue" : "5c466958e9a02d51b00e5b44",
-          "answer" : "5c4668a7e9a02d51b00d7200",
-          "position" : "42D"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b280",
-          "clue" : "5c466888e9a02d51b00d4b5d",
-          "answer" : "5c466e79e9a02d51b011b1e7",
-          "position" : "45D"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b27f",
-          "clue" : "5c4668a7e9a02d51b00d723a",
-          "answer" : "5c4668a7e9a02d51b00d7239",
-          "position" : "46D"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b27e",
-          "clue" : "5c466932e9a02d51b00e2d8a",
-          "answer" : "5c46688ee9a02d51b00d54c3",
-          "position" : "48D"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b27d",
-          "clue" : "5c46691ee9a02d51b00e15c6",
-          "answer" : "5c4668dbe9a02d51b00dbd62",
-          "position" : "49D"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b27c",
-          "clue" : "5c4668fae9a02d51b00de4ff",
-          "answer" : "5c4668e3e9a02d51b00dc719",
-          "position" : "51D"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b27b",
-          "clue" : "5c4669aee9a02d51b00eb61d",
-          "answer" : "5c46690ae9a02d51b00dfb65",
-          "position" : "53D"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b27a",
-          "clue" : "5c466c25e9a02d51b010a549",
-          "answer" : "5c466b0fe9a02d51b00fef1a",
-          "position" : "55D"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b279",
-          "clue" : "5c466e79e9a02d51b011b1f6",
-          "answer" : "5c4668f6e9a02d51b00de050",
-          "position" : "56D"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b278",
-          "clue" : "5c466894e9a02d51b00d5f02",
-          "answer" : "5c46689ce9a02d51b00d6463",
-          "position" : "58D"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b277",
-          "clue" : "5c4668dee9a02d51b00dc24d",
-          "answer" : "5c466e79e9a02d51b011b1fb",
-          "position" : "59D"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b276",
-          "clue" : "5c466cc8e9a02d51b010f6cf",
-          "answer" : "5c466968e9a02d51b00e6ea4",
-          "position" : "63D"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b275",
-          "clue" : "5c466905e9a02d51b00df3e3",
-          "answer" : "5c46688ae9a02d51b00d50a0",
-          "position" : "65D"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b274",
-          "clue" : "5c466bcbe9a02d51b0106cfd",
-          "answer" : "5c4668e3e9a02d51b00dc7ab",
-          "position" : "66D"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b273",
-          "clue" : "5c4668ffe9a02d51b00dec9e",
-          "answer" : "5c4668dee9a02d51b00dc2bd",
-          "position" : "67D"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b272",
-          "clue" : "5c46696fe9a02d51b00e74dc",
-          "answer" : "5c466a82e9a02d51b00f7723",
-          "position" : "68D"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b271",
-          "clue" : "5c466cb8e9a02d51b010eec0",
-          "answer" : "5c466e79e9a02d51b011b208",
-          "position" : "69D"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b270",
-          "clue" : "5c466a0ee9a02d51b00f1156",
-          "answer" : "5c466938e9a02d51b00e353c",
-          "position" : "71D"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b26f",
-          "clue" : "5c466a0be9a02d51b00f0e34",
-          "answer" : "5c4668aae9a02d51b00d777c",
-          "position" : "73D"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b26e",
-          "clue" : "5c466a39e9a02d51b00f3998",
-          "answer" : "5c4669c7e9a02d51b00ecd7d",
-          "position" : "75D"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b26d",
-          "clue" : "5c466e21e9a02d51b0118e8b",
-          "answer" : "5c466d8fe9a02d51b0114fbe",
-          "position" : "76D"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b26c",
-          "clue" : "5c466b77e9a02d51b010368e",
-          "answer" : "5c46688ee9a02d51b00d547d",
-          "position" : "78D"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b26b",
-          "clue" : "5c466a2de9a02d51b00f2f39",
-          "answer" : "5c466da6e9a02d51b01157fd",
-          "position" : "80D"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b26a",
-          "clue" : "5c46688ae9a02d51b00d5047",
-          "answer" : "5c466894e9a02d51b00d5e41",
-          "position" : "82D"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b269",
-          "clue" : "5c466e79e9a02d51b011b219",
-          "answer" : "5c466bf6e9a02d51b0108948",
-          "position" : "84D"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b268",
-          "clue" : "5c466888e9a02d51b00d4c81",
-          "answer" : "5c46691de9a02d51b00e140a",
-          "position" : "85D"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b267",
-          "clue" : "5c466896e9a02d51b00d6202",
-          "answer" : "5c4669aee9a02d51b00eb5f4",
-          "position" : "86D"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b266",
-          "clue" : "5c4668a5e9a02d51b00d7094",
-          "answer" : "5c466907e9a02d51b00df7be",
-          "position" : "88D"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b265",
-          "clue" : "5c466896e9a02d51b00d623d",
-          "answer" : "5c46691ee9a02d51b00e15a4",
-          "position" : "89D"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b264",
-          "clue" : "5c466e79e9a02d51b011b225",
-          "answer" : "5c466e79e9a02d51b011b224",
-          "position" : "91D"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b263",
-          "clue" : "5c46698ce9a02d51b00e971d",
-          "answer" : "5c466892e9a02d51b00d5b4b",
-          "position" : "93D"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b262",
-          "clue" : "5c4669b7e9a02d51b00ebdb4",
-          "answer" : "5c466e79e9a02d51b011b22a",
-          "position" : "95D"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b261",
-          "clue" : "5c4668d9e9a02d51b00dbac8",
-          "answer" : "5c46689ee9a02d51b00d6779",
-          "position" : "97D"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b260",
-          "clue" : "5c466a3ce9a02d51b00f3c60",
-          "answer" : "5c466972e9a02d51b00e79be",
-          "position" : "98D"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b25f",
-          "clue" : "5c466ab5e9a02d51b00fa328",
-          "answer" : "5c466e79e9a02d51b011b231",
-          "position" : "100D"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b25e",
-          "clue" : "5c4668ece9a02d51b00dd522",
-          "answer" : "5c466e79e9a02d51b011b234",
-          "position" : "103D"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b25d",
-          "clue" : "5c4668a5e9a02d51b00d7037",
-          "answer" : "5c466e79e9a02d51b011b237",
-          "position" : "105D"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b25c",
-          "clue" : "5c466c34e9a02d51b010ae2e",
-          "answer" : "5c466a88e9a02d51b00f7c69",
-          "position" : "106D"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b25b",
-          "clue" : "5c466e79e9a02d51b011b23c",
-          "answer" : "5c4668b5e9a02d51b00d8591",
-          "position" : "107D"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b25a",
-          "clue" : "5c4669b7e9a02d51b00ebde6",
-          "answer" : "5c4668ffe9a02d51b00dede8",
-          "position" : "109D"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b259",
-          "clue" : "5c4668a2e9a02d51b00d6df1",
-          "answer" : "5c466e79e9a02d51b011b241",
-          "position" : "111D"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b258",
-          "clue" : "5c46688ae9a02d51b00d4e46",
-          "answer" : "5c466982e9a02d51b00e8c2f",
-          "position" : "113D"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b257",
-          "clue" : "5c46688ee9a02d51b00d548c",
-          "answer" : "5c466928e9a02d51b00e2188",
-          "position" : "116D"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b256",
-          "clue" : "5c466a2de9a02d51b00f2f36",
-          "answer" : "5c4668b3e9a02d51b00d828c",
-          "position" : "117D"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b255",
-          "clue" : "5c4668afe9a02d51b00d7d9e",
-          "answer" : "5c4668aae9a02d51b00d781c",
-          "position" : "119D"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b254",
-          "clue" : "5c466888e9a02d51b00d4c51",
-          "answer" : "5c4668e5e9a02d51b00dc973",
-          "position" : "120D"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b253",
-          "clue" : "5c466c8de9a02d51b010dcb9",
-          "answer" : "5c4668c3e9a02d51b00d9c1e",
-          "position" : "122D"
-      },
-      {
-          "_id" : "5c466e79e9a02d51b011b252",
-          "clue" : "5c4668a2e9a02d51b00d6d4e",
-          "answer" : "5c466894e9a02d51b00d5e54",
-          "position" : "123D"
-      }
-  ],
-  "board" : [
+  "_id": "5c56849b55d1710b64ff88d8",
+  "board": [
     [
-          "A",
-          "R",
-          "I",
-          "A",
-          "S",
-          "#BlackSquare#",
-          "A",
-          "S",
-          "S",
-          "I",
-          "S",
-          "I",
-          "#BlackSquare#",
-          "A",
-          "R",
-          "A",
-          "R",
-          "A",
-          "T",
-          "#BlackSquare#",
-          "#BlackSquare#"
-      ],
-    [
-          "C",
-          "O",
-          "M",
-          "M",
-          "I",
-          "S",
-          "S",
-          "I",
-          "O",
-          "N",
-          "E",
-          "R",
-          "#BlackSquare#",
-          "P",
-          "E",
-          "R",
-          "E",
-          "I",
-          "R",
-          "A",
-          "#BlackSquare#"
-      ],
-    [
-          "I",
-          "M",
-          "P",
-          "E",
-          "L",
-          "L",
-          "I",
-          "T",
-          "T",
-          "E",
-          "R",
-          "I",
-          "#BlackSquare#",
-          "T",
-          "I",
-          "B",
-          "E",
-          "T",
-          "A",
-          "N",
-          "S"
-      ],
-    [
-          "D",
-          "E",
-          "A",
-          "L",
-          "#BlackSquare#",
-          "O",
-          "A",
-          "T",
-          "#BlackSquare#",
-          "Z",
-          "E",
-          "D",
-          "S",
-          "#BlackSquare#",
-          "N",
-          "O",
-          "D",
-          "#BlackSquare#",
-          "N",
-          "E",
-          "O"
-      ],
-    [
-          "#BlackSquare#",
-          "#BlackSquare#",
-          "R",
-          "I",
-          "V",
-          "E",
-          "T",
-          "E",
-          "R",
-          "#BlackSquare#",
-          "S",
-          "A",
-          "M",
-          "B",
-          "A",
-          "R",
-          "#BlackSquare#",
-          "P",
-          "S",
-          "T",
-          "S"
-      ],
-    [
-          "S",
-          "E",
-          "T",
-          "A",
-          "E",
-          "#BlackSquare#",
-          "I",
-          "R",
-          "A",
-          "S",
-          "#BlackSquare#",
-          "L",
-          "I",
-          "E",
-          "#BlackSquare#",
-          "#BlackSquare#",
-          "R",
-          "A",
-          "J",
-          "A",
-          "H"
-      ],
-    [
-          "A",
-          "L",
-          "I",
-          "#BlackSquare#",
-          "T",
-          "O",
-          "C",
-          "S",
-          "I",
-          "N",
-          "S",
-          "#BlackSquare#",
-          "T",
-          "A",
-          "M",
-          "P",
-          "I",
-          "C",
-          "O",
-          "#BlackSquare#",
-          "#BlackSquare#"
-      ],
-    [
-          "P",
-          "L",
-          "A",
-          "T",
-          "E",
-          "N",
-          "S",
-          "#BlackSquare#",
-          "N",
-          "U",
-          "N",
-          "S",
-          "#BlackSquare#",
-          "T",
-          "E",
-          "A",
-          "P",
-          "A",
-          "R",
-          "T",
-          "Y"
-      ],
-    [
-          "S",
-          "A",
-          "L",
-          "A",
-          "R",
-          "Y",
-          "#BlackSquare#",
-          "A",
-          "M",
-          "B",
-          "A",
-          "T",
-          "O",
-          "#BlackSquare#",
-          "R",
-          "Y",
-          "E",
-          "#BlackSquare#",
-          "D",
-          "O",
-          "E"
-      ],
-    [
-          "#BlackSquare#",
-          "#BlackSquare#",
-          "#BlackSquare#",
-          "M",
-          "A",
-          "X",
-          "I",
-          "M",
-          "A",
-          "#BlackSquare#",
-          "G",
-          "A",
-          "V",
-          "E",
-          "L",
-          "S",
-          "#BlackSquare#",
-          "M",
-          "A",
-          "L",
-          "L"
-      ],
-    [
-          "A",
-          "L",
-          "C",
-          "A",
-          "N",
-          "#BlackSquare#",
-          "M",
-          "I",
-          "K",
-          "A",
-          "#BlackSquare#",
-          "N",
-          "E",
-          "R",
-          "I",
-          "#BlackSquare#",
-          "C",
-          "A",
-          "N",
-          "A",
-          "L"
-      ],
-    [
-          "G",
-          "O",
-          "O",
-          "N",
-          "#BlackSquare#",
-          "Y",
-          "O",
-          "D",
-          "E",
-          "L",
-          "S",
-          "#BlackSquare#",
-          "R",
-          "A",
-          "N",
-          "C",
-          "H",
-          "O",
-          "#BlackSquare#",
-          "#BlackSquare#",
-          "#BlackSquare#"
-      ],
-    [
-          "A",
-          "R",
-          "N",
-          "#BlackSquare#",
-          "J",
-          "U",
-          "G",
-          "#BlackSquare#",
-          "R",
-          "E",
-          "C",
-          "E",
-          "S",
-          "S",
-          "#BlackSquare#",
-          "H",
-          "I",
-          "R",
-          "I",
-          "N",
-          "G"
-      ],
-    [
-          "R",
-          "A",
-          "N",
-          "S",
-          "O",
-          "M",
-          "E",
-          "D",
-          "#BlackSquare#",
-          "C",
-          "A",
-          "R",
-          "L",
-          "#BlackSquare#",
-          "F",
-          "A",
-          "N",
-          "I",
-          "N",
-          "A",
-          "L"
-      ],
-    [
-          "#BlackSquare#",
-          "#BlackSquare#",
-          "E",
-          "L",
-          "E",
-          "A",
-          "N",
-          "O",
-          "R",
-          "#BlackSquare#",
-          "P",
-          "R",
-          "E",
-          "P",
-          "A",
-          "R",
-          "E",
-          "#BlackSquare#",
-          "S",
-          "P",
-          "A"
-      ],
-    [
-          "L",
-          "O",
-          "C",
-          "A",
-          "L",
-          "#BlackSquare#",
-          "#BlackSquare#",
-          "M",
-          "A",
-          "T",
-          "#BlackSquare#",
-          "S",
-          "E",
-          "R",
-          "I",
-          "#BlackSquare#",
-          "S",
-          "T",
-          "I",
-          "E",
-          "D"
-      ],
-    [
-          "A",
-          "R",
-          "T",
-          "Y",
-          "#BlackSquare#",
-          "C",
-          "H",
-          "E",
-          "R",
-          "U",
-          "B",
-          "#BlackSquare#",
-          "P",
-          "E",
-          "L",
-          "L",
-          "E",
-          "A",
-          "S",
-          "#BlackSquare#",
-          "#BlackSquare#"
-      ],
-    [
-          "I",
-          "L",
-          "I",
-          "#BlackSquare#",
-          "A",
-          "R",
-          "E",
-          "#BlackSquare#",
-          "E",
-          "R",
-          "O",
-          "S",
-          "#BlackSquare#",
-          "C",
-          "U",
-          "I",
-          "#BlackSquare#",
-          "S",
-          "T",
-          "A",
-          "Y"
-      ],
-    [
-          "R",
-          "O",
-          "C",
-          "K",
-          "W",
-          "E",
-          "L",
-          "L",
-          "#BlackSquare#",
-          "B",
-          "O",
-          "I",
-          "L",
-          "E",
-          "R",
-          "M",
-          "A",
-          "K",
-          "E",
-          "R",
-          "S"
-      ],
-    [
-          "#BlackSquare#",
-          "P",
-          "U",
-          "E",
-          "R",
-          "I",
-          "L",
-          "E",
-          "#BlackSquare#",
-          "I",
-          "N",
-          "D",
-          "E",
-          "P",
-          "E",
-          "N",
-          "D",
-          "E",
-          "N",
-          "C",
-          "E"
-      ],
-    [
-          "#BlackSquare#",
-          "#BlackSquare#",
-          "T",
-          "A",
-          "Y",
-          "L",
-          "O",
-          "R",
-          "#BlackSquare#",
-          "D",
-          "E",
-          "I",
-          "S",
-          "T",
-          "S",
-          "#BlackSquare#",
-          "A",
-          "T",
-          "T",
-          "A",
-          "R"
-      ]
+        "D",
+        "A",
+        "M",
+        "P",
+        "#BlackSquare#",
+        "#BlackSquare#",
+        "I",
+        "S",
+        "O",
+        "F",
+        "#BlackSquare#",
+        "G",
+        "R",
+        "A",
+        "P",
+        "H",
+        "#BlackSquare#",
+        "A",
+        "B",
+        "C",
+        "#BlackSquare#"
     ],
-  "__v" : 0
+    [
+        "I",
+        "D",
+        "E",
+        "A",
+        "#BlackSquare#",
+        "A",
+        "N",
+        "T",
+        "R",
+        "A",
+        "#BlackSquare#",
+        "R",
+        "O",
+        "L",
+        "E",
+        "O",
+        "#BlackSquare#",
+        "M",
+        "A",
+        "R",
+        "T"
+    ],
+    [
+        "C",
+        "O",
+        "N",
+        "T",
+        "E",
+        "N",
+        "D",
+        "E",
+        "R",
+        "S",
+        "#BlackSquare#",
+        "A",
+        "N",
+        "T",
+        "I",
+        "T",
+        "H",
+        "E",
+        "S",
+        "E",
+        "S"
+    ],
+    [
+        "T",
+        "R",
+        "A",
+        "I",
+        "N",
+        "E",
+        "R",
+        "S",
+        "#BlackSquare#",
+        "C",
+        "A",
+        "N",
+        "D",
+        "O",
+        "#BlackSquare#",
+        "H",
+        "A",
+        "L",
+        "I",
+        "T",
+        "E"
+    ],
+    [
+        "A",
+        "N",
+        "T",
+        "E",
+        "N",
+        "N",
+        "A",
+        "#BlackSquare#",
+        "L",
+        "I",
+        "N",
+        "G",
+        "O",
+        "#BlackSquare#",
+        "F",
+        "E",
+        "R",
+        "I",
+        "N",
+        "E",
+        "#BlackSquare#"
+    ],
+    [
+        "#BlackSquare#",
+        "#BlackSquare#",
+        "#BlackSquare#",
+        "N",
+        "E",
+        "T",
+        "#BlackSquare#",
+        "H",
+        "A",
+        "S",
+        "T",
+        "E",
+        "#BlackSquare#",
+        "C",
+        "A",
+        "A",
+        "M",
+        "A",
+        "#BlackSquare#",
+        "#BlackSquare#",
+        "#BlackSquare#"
+    ],
+    [
+        "A",
+        "S",
+        "P",
+        "C",
+        "A",
+        "#BlackSquare#",
+        "H",
+        "I",
+        "N",
+        "T",
+        "E",
+        "R",
+        "L",
+        "A",
+        "N",
+        "D",
+        "S",
+        "#BlackSquare#",
+        "P",
+        "P",
+        "P"
+    ],
+    [
+        "I",
+        "H",
+        "R",
+        "E",
+        "#BlackSquare#",
+        "C",
+        "A",
+        "K",
+        "E",
+        "#BlackSquare#",
+        "#BlackSquare#",
+        "#BlackSquare#",
+        "U",
+        "N",
+        "O",
+        "S",
+        "#BlackSquare#",
+        "#BlackSquare#",
+        "R",
+        "A",
+        "O"
+    ],
+    [
+        "D",
+        "A",
+        "O",
+        "#BlackSquare#",
+        "M",
+        "A",
+        "L",
+        "E",
+        "D",
+        "I",
+        "C",
+        "T",
+        "I",
+        "O",
+        "N",
+        "#BlackSquare#",
+        "J",
+        "O",
+        "O",
+        "S",
+        "S"
+    ],
+    [
+        "A",
+        "M",
+        "P",
+        "#BlackSquare#",
+        "A",
+        "R",
+        "E",
+        "S",
+        "#BlackSquare#",
+        "N",
+        "O",
+        "I",
+        "S",
+        "E",
+        "#BlackSquare#",
+        "W",
+        "A",
+        "R",
+        "M",
+        "T",
+        "H"
+    ],
+    [
+        "#BlackSquare#",
+        "R",
+        "A",
+        "F",
+        "T",
+        "E",
+        "R",
+        "#BlackSquare#",
+        "N",
+        "O",
+        "V",
+        "A",
+        "E",
+        "#BlackSquare#",
+        "B",
+        "A",
+        "M",
+        "B",
+        "O",
+        "O",
+        "#BlackSquare#"
+    ],
+    [
+        "Y",
+        "O",
+        "G",
+        "U",
+        "R",
+        "T",
+        "#BlackSquare#",
+        "M",
+        "I",
+        "N",
+        "E",
+        "R",
+        "#BlackSquare#",
+        "F",
+        "O",
+        "R",
+        "E",
+        "#BlackSquare#",
+        "T",
+        "R",
+        "A"
+    ],
+    [
+        "A",
+        "C",
+        "A",
+        "R",
+        "I",
+        "#BlackSquare#",
+        "L",
+        "A",
+        "C",
+        "E",
+        "R",
+        "A",
+        "T",
+        "I",
+        "O",
+        "N",
+        "S",
+        "#BlackSquare#",
+        "I",
+        "A",
+        "N"
+    ],
+    [
+        "M",
+        "K",
+        "T",
+        "#BlackSquare#",
+        "#BlackSquare#",
+        "P",
+        "U",
+        "S",
+        "H",
+        "#BlackSquare#",
+        "#BlackSquare#",
+        "#BlackSquare#",
+        "O",
+        "D",
+        "E",
+        "S",
+        "#BlackSquare#",
+        "D",
+        "O",
+        "L",
+        "T"
+    ],
+    [
+        "S",
+        "S",
+        "E",
+        "#BlackSquare#",
+        "D",
+        "I",
+        "S",
+        "H",
+        "E",
+        "V",
+        "E",
+        "L",
+        "L",
+        "E",
+        "D",
+        "#BlackSquare#",
+        "M",
+        "E",
+        "N",
+        "S",
+        "A"
+    ],
+    [
+        "#BlackSquare#",
+        "#BlackSquare#",
+        "#BlackSquare#",
+        "D",
+        "E",
+        "L",
+        "T",
+        "A",
+        "#BlackSquare#",
+        "A",
+        "D",
+        "E",
+        "A",
+        "L",
+        "#BlackSquare#",
+        "V",
+        "A",
+        "C",
+        "#BlackSquare#",
+        "#BlackSquare#",
+        "#BlackSquare#"
+    ],
+    [
+        "#BlackSquare#",
+        "S",
+        "E",
+        "E",
+        "M",
+        "L",
+        "Y",
+        "#BlackSquare#",
+        "O",
+        "L",
+        "E",
+        "A",
+        "N",
+        "#BlackSquare#",
+        "M",
+        "E",
+        "N",
+        "A",
+        "G",
+        "E",
+        "S"
+    ],
+    [
+        "M",
+        "A",
+        "N",
+        "T",
+        "U",
+        "A",
+        "#BlackSquare#",
+        "G",
+        "U",
+        "I",
+        "L",
+        "D",
+        "#BlackSquare#",
+        "M",
+        "A",
+        "R",
+        "I",
+        "N",
+        "A",
+        "T",
+        "E"
+    ],
+    [
+        "D",
+        "E",
+        "T",
+        "E",
+        "R",
+        "G",
+        "E",
+        "N",
+        "T",
+        "S",
+        "#BlackSquare#",
+        "S",
+        "T",
+        "A",
+        "G",
+        "N",
+        "A",
+        "T",
+        "I",
+        "O",
+        "N"
+    ],
+    [
+        "I",
+        "T",
+        "E",
+        "S",
+        "#BlackSquare#",
+        "E",
+        "N",
+        "A",
+        "R",
+        "E",
+        "#BlackSquare#",
+        "O",
+        "V",
+        "I",
+        "N",
+        "E",
+        "#BlackSquare#",
+        "E",
+        "T",
+        "N",
+        "A"
+    ],
+    [
+        "#BlackSquare#",
+        "A",
+        "R",
+        "T",
+        "#BlackSquare#",
+        "D",
+        "A",
+        "T",
+        "E",
+        "S",
+        "#BlackSquare#",
+        "N",
+        "A",
+        "N",
+        "A",
+        "#BlackSquare#",
+        "#BlackSquare#",
+        "R",
+        "E",
+        "S",
+        "T"
+    ]
+],
+  "title": "WITH A TOUCH OF GEOGRAPHY",
+  "date": "3/29/1942",
+  "publisher": "New York Times",
+  "editor": "Margaret Farrar",
+  "author": "Alvin Ashby",
+  "dimensions": {
+    "rows": 23,
+    "columns": 23
+  },
+  "clues": [
+    {
+      "_id": "5c56849b55d1710b64ff8bc8",
+      "clue": "5c56849b55d1710b64ff88d9",
+      "answer": "5c56849655d1710b64ff8349",
+      "position": "1A"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8bc7",
+      "clue": "5c56849b55d1710b64ff88dd",
+      "answer": "5c56849b55d1710b64ff88dc",
+      "position": "8A"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8bc6",
+      "clue": "5c56848f55d1710b64ff77d5",
+      "answer": "5c56849b55d1710b64ff88e0",
+      "position": "14A"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8bc5",
+      "clue": "5c56848f55d1710b64ff7835",
+      "answer": "5c56849655d1710b64ff82c3",
+      "position": "22A"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8bc4",
+      "clue": "5c56849b55d1710b64ff88e6",
+      "answer": "5c56849b55d1710b64ff88e5",
+      "position": "23A"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8bc3",
+      "clue": "5c56849855d1710b64ff8636",
+      "answer": "5c56849b55d1710b64ff88e9",
+      "position": "24A"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8bc2",
+      "clue": "5c56848f55d1710b64ff7795",
+      "answer": "5c56849b55d1710b64ff88ec",
+      "position": "25A"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8bc1",
+      "clue": "5c56849b55d1710b64ff88f0",
+      "answer": "5c56849b55d1710b64ff88ef",
+      "position": "26A"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8bc0",
+      "clue": "5c56849b55d1710b64ff88f4",
+      "answer": "5c56849b55d1710b64ff88f3",
+      "position": "27A"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8bbf",
+      "clue": "5c56849b55d1710b64ff88f8",
+      "answer": "5c56849b55d1710b64ff88f7",
+      "position": "28A"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8bbe",
+      "clue": "5c56849355d1710b64ff7e10",
+      "answer": "5c56849b55d1710b64ff88fb",
+      "position": "29A"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8bbd",
+      "clue": "5c56849355d1710b64ff7d1a",
+      "answer": "5c56849b55d1710b64ff88fe",
+      "position": "31A"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8bbc",
+      "clue": "5c56849b55d1710b64ff8901",
+      "answer": "5c56849655d1710b64ff844a",
+      "position": "33A"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8bbb",
+      "clue": "5c56849b55d1710b64ff8905",
+      "answer": "5c56849b55d1710b64ff8904",
+      "position": "34A"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8bba",
+      "clue": "5c56849355d1710b64ff7eb1",
+      "answer": "5c56849b55d1710b64ff8908",
+      "position": "36A"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8bb9",
+      "clue": "5c56849b55d1710b64ff890c",
+      "answer": "5c56849b55d1710b64ff890b",
+      "position": "37A"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8bb8",
+      "clue": "5c56849b55d1710b64ff8910",
+      "answer": "5c56849b55d1710b64ff890f",
+      "position": "38A"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8bb7",
+      "clue": "5c56849b55d1710b64ff8914",
+      "answer": "5c56849b55d1710b64ff8913",
+      "position": "39A"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8bb6",
+      "clue": "5c56849155d1710b64ff79fc",
+      "answer": "5c56849b55d1710b64ff8917",
+      "position": "41A"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8bb5",
+      "clue": "5c56849b55d1710b64ff891b",
+      "answer": "5c56849b55d1710b64ff891a",
+      "position": "42A"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8bb4",
+      "clue": "5c56848f55d1710b64ff7891",
+      "answer": "5c56849b55d1710b64ff891e",
+      "position": "43A"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8bb3",
+      "clue": "5c56849b55d1710b64ff8922",
+      "answer": "5c56849b55d1710b64ff8921",
+      "position": "44A"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8bb2",
+      "clue": "5c56849b55d1710b64ff8926",
+      "answer": "5c56849b55d1710b64ff8925",
+      "position": "47A"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8bb1",
+      "clue": "5c56849b55d1710b64ff892a",
+      "answer": "5c56849b55d1710b64ff8929",
+      "position": "48A"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8bb0",
+      "clue": "5c56848f55d1710b64ff766d",
+      "answer": "5c56849b55d1710b64ff892d",
+      "position": "49A"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8baf",
+      "clue": "5c56849455d1710b64ff81da",
+      "answer": "5c56849b55d1710b64ff8930",
+      "position": "52A"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8bae",
+      "clue": "5c56849b55d1710b64ff8934",
+      "answer": "5c56849b55d1710b64ff8933",
+      "position": "53A"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8bad",
+      "clue": "5c56849b55d1710b64ff8938",
+      "answer": "5c56849b55d1710b64ff8937",
+      "position": "57A"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8bac",
+      "clue": "5c56849b55d1710b64ff893c",
+      "answer": "5c56849b55d1710b64ff893b",
+      "position": "58A"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8bab",
+      "clue": "5c56849455d1710b64ff8154",
+      "answer": "5c56849b55d1710b64ff893f",
+      "position": "59A"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8baa",
+      "clue": "5c56849455d1710b64ff7fda",
+      "answer": "5c56849b55d1710b64ff8942",
+      "position": "60A"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8ba9",
+      "clue": "5c56848f55d1710b64ff76c1",
+      "answer": "5c56849b55d1710b64ff8945",
+      "position": "61A"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8ba8",
+      "clue": "5c56848f55d1710b64ff76ad",
+      "answer": "5c56849b55d1710b64ff8948",
+      "position": "62A"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8ba7",
+      "clue": "5c56848f55d1710b64ff76ed",
+      "answer": "5c56849b55d1710b64ff894b",
+      "position": "63A"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8ba6",
+      "clue": "5c56849b55d1710b64ff894e",
+      "answer": "5c56849855d1710b64ff8646",
+      "position": "65A"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8ba5",
+      "clue": "5c56849b55d1710b64ff8952",
+      "answer": "5c56849b55d1710b64ff8951",
+      "position": "67A"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8ba4",
+      "clue": "5c56849155d1710b64ff7a14",
+      "answer": "5c56849b55d1710b64ff8955",
+      "position": "68A"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8ba3",
+      "clue": "5c56848f55d1710b64ff7689",
+      "answer": "5c56849b55d1710b64ff8958",
+      "position": "70A"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8ba2",
+      "clue": "5c56848f55d1710b64ff7651",
+      "answer": "5c56849b55d1710b64ff895b",
+      "position": "71A"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8ba1",
+      "clue": "5c56849b55d1710b64ff895f",
+      "answer": "5c56849b55d1710b64ff895e",
+      "position": "72A"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8ba0",
+      "clue": "5c56848f55d1710b64ff773d",
+      "answer": "5c56849b55d1710b64ff8962",
+      "position": "74A"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b9f",
+      "clue": "5c56849b55d1710b64ff8965",
+      "answer": "5c56849355d1710b64ff7e92",
+      "position": "75A"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b9e",
+      "clue": "5c56849b55d1710b64ff8969",
+      "answer": "5c56849b55d1710b64ff8968",
+      "position": "76A"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b9d",
+      "clue": "5c56848f55d1710b64ff76ed",
+      "answer": "5c56849155d1710b64ff79c8",
+      "position": "77A"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b9c",
+      "clue": "5c56849b55d1710b64ff896f",
+      "answer": "5c56849b55d1710b64ff896e",
+      "position": "78A"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b9b",
+      "clue": "5c56849155d1710b64ff7a14",
+      "answer": "5c56849b55d1710b64ff8972",
+      "position": "80A"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b9a",
+      "clue": "5c56849b55d1710b64ff8976",
+      "answer": "5c56849b55d1710b64ff8975",
+      "position": "81A"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b99",
+      "clue": "5c56849b55d1710b64ff897a",
+      "answer": "5c56849b55d1710b64ff8979",
+      "position": "82A"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b98",
+      "clue": "5c56849b55d1710b64ff897e",
+      "answer": "5c56849b55d1710b64ff897d",
+      "position": "85A"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b97",
+      "clue": "5c56848f55d1710b64ff78a9",
+      "answer": "5c56849b55d1710b64ff8981",
+      "position": "86A"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b96",
+      "clue": "5c56849b55d1710b64ff8985",
+      "answer": "5c56849b55d1710b64ff8984",
+      "position": "88A"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b95",
+      "clue": "5c56849b55d1710b64ff8989",
+      "answer": "5c56849b55d1710b64ff8988",
+      "position": "90A"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b94",
+      "clue": "5c56849b55d1710b64ff898d",
+      "answer": "5c56849b55d1710b64ff898c",
+      "position": "91A"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b93",
+      "clue": "5c56849b55d1710b64ff8991",
+      "answer": "5c56849b55d1710b64ff8990",
+      "position": "93A"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b92",
+      "clue": "5c56849455d1710b64ff8131",
+      "answer": "5c56849b55d1710b64ff8994",
+      "position": "94A"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b91",
+      "clue": "5c56849155d1710b64ff7b42",
+      "answer": "5c56849b55d1710b64ff8997",
+      "position": "95A"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b90",
+      "clue": "5c56849b55d1710b64ff899b",
+      "answer": "5c56849b55d1710b64ff899a",
+      "position": "96A"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b8f",
+      "clue": "5c56849b55d1710b64ff899f",
+      "answer": "5c56849b55d1710b64ff899e",
+      "position": "97A"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b8e",
+      "clue": "5c56849b55d1710b64ff89a3",
+      "answer": "5c56849b55d1710b64ff89a2",
+      "position": "99A"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b8d",
+      "clue": "5c56849155d1710b64ff7b70",
+      "answer": "5c56849b55d1710b64ff89a6",
+      "position": "100A"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b8c",
+      "clue": "5c56849155d1710b64ff79b6",
+      "answer": "5c56849b55d1710b64ff89a9",
+      "position": "102A"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b8b",
+      "clue": "5c56849b55d1710b64ff89ad",
+      "answer": "5c56849b55d1710b64ff89ac",
+      "position": "103A"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b8a",
+      "clue": "5c56849355d1710b64ff7cda",
+      "answer": "5c56849b55d1710b64ff89b0",
+      "position": "104A"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b89",
+      "clue": "5c56849b55d1710b64ff89b4",
+      "answer": "5c56849b55d1710b64ff89b3",
+      "position": "105A"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b88",
+      "clue": "5c56849155d1710b64ff7ac9",
+      "answer": "5c56849b55d1710b64ff89b7",
+      "position": "108A"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b87",
+      "clue": "5c56848f55d1710b64ff7629",
+      "answer": "5c56849b55d1710b64ff89ba",
+      "position": "109A"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b86",
+      "clue": "5c56849b55d1710b64ff89be",
+      "answer": "5c56849b55d1710b64ff89bd",
+      "position": "110A"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b85",
+      "clue": "5c56849b55d1710b64ff89c2",
+      "answer": "5c56849b55d1710b64ff89c1",
+      "position": "114A"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b84",
+      "clue": "5c56849455d1710b64ff808a",
+      "answer": "5c56849b55d1710b64ff89c5",
+      "position": "115A"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b83",
+      "clue": "5c56849355d1710b64ff7d61",
+      "answer": "5c56849b55d1710b64ff89c8",
+      "position": "116A"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b82",
+      "clue": "5c56848f55d1710b64ff7795",
+      "answer": "5c56849b55d1710b64ff89cb",
+      "position": "119A"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b81",
+      "clue": "5c56848f55d1710b64ff7701",
+      "answer": "5c56849b55d1710b64ff89ce",
+      "position": "120A"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b80",
+      "clue": "5c56849355d1710b64ff7e60",
+      "answer": "5c56849b55d1710b64ff89d1",
+      "position": "121A"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b7f",
+      "clue": "5c56849355d1710b64ff7dac",
+      "answer": "5c56849b55d1710b64ff89d4",
+      "position": "122A"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b7e",
+      "clue": "5c56849b55d1710b64ff89d8",
+      "answer": "5c56849b55d1710b64ff89d7",
+      "position": "124A"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b7d",
+      "clue": "5c56848f55d1710b64ff7835",
+      "answer": "5c56849b55d1710b64ff89db",
+      "position": "125A"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b7c",
+      "clue": "5c56849b55d1710b64ff89df",
+      "answer": "5c56849b55d1710b64ff89de",
+      "position": "127A"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b7b",
+      "clue": "5c56849b55d1710b64ff89e3",
+      "answer": "5c56849b55d1710b64ff89e2",
+      "position": "129A"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b7a",
+      "clue": "5c56849b55d1710b64ff89e7",
+      "answer": "5c56849b55d1710b64ff89e6",
+      "position": "131A"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b79",
+      "clue": "5c56849b55d1710b64ff89eb",
+      "answer": "5c56849b55d1710b64ff89ea",
+      "position": "132A"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b78",
+      "clue": "5c56849b55d1710b64ff89ef",
+      "answer": "5c56849b55d1710b64ff89ee",
+      "position": "133A"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b77",
+      "clue": "5c56849b55d1710b64ff89f3",
+      "answer": "5c56849b55d1710b64ff89f2",
+      "position": "134A"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b76",
+      "clue": "5c56849355d1710b64ff7e60",
+      "answer": "5c56849b55d1710b64ff89f6",
+      "position": "135A"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b75",
+      "clue": "5c56848f55d1710b64ff7745",
+      "answer": "5c56849b55d1710b64ff89f9",
+      "position": "136A"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b74",
+      "clue": "5c56848f55d1710b64ff7801",
+      "answer": "5c56849b55d1710b64ff89fc",
+      "position": "1D"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b73",
+      "clue": "5c56848f55d1710b64ff76ed",
+      "answer": "5c56849b55d1710b64ff89ff",
+      "position": "2D"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b72",
+      "clue": "5c56849b55d1710b64ff8a02",
+      "answer": "5c56849855d1710b64ff868b",
+      "position": "3D"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b71",
+      "clue": "5c56848f55d1710b64ff7809",
+      "answer": "5c56849b55d1710b64ff8a05",
+      "position": "4D"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b70",
+      "clue": "5c56849155d1710b64ff79fc",
+      "answer": "5c56849b55d1710b64ff8a08",
+      "position": "5D"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b6f",
+      "clue": "5c56848f55d1710b64ff784d",
+      "answer": "5c56849b55d1710b64ff8a0b",
+      "position": "6D"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b6e",
+      "clue": "5c56849155d1710b64ff7991",
+      "answer": "5c56849b55d1710b64ff8a0e",
+      "position": "7D"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b6d",
+      "clue": "5c56849b55d1710b64ff8a11",
+      "answer": "5c56849455d1710b64ff80ec",
+      "position": "8D"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b6c",
+      "clue": "5c56849455d1710b64ff81fb",
+      "answer": "5c56849b55d1710b64ff8a14",
+      "position": "9D"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b6b",
+      "clue": "5c56849b55d1710b64ff8a18",
+      "answer": "5c56849b55d1710b64ff8a17",
+      "position": "10D"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b6a",
+      "clue": "5c56849b55d1710b64ff8a1c",
+      "answer": "5c56849b55d1710b64ff8a1b",
+      "position": "11D"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b69",
+      "clue": "5c56848f55d1710b64ff77a5",
+      "answer": "5c56849455d1710b64ff81b6",
+      "position": "12D"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b68",
+      "clue": "5c56848f55d1710b64ff787d",
+      "answer": "5c56849b55d1710b64ff8a21",
+      "position": "13D"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b67",
+      "clue": "5c56849b55d1710b64ff8a25",
+      "answer": "5c56849b55d1710b64ff8a24",
+      "position": "14D"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b66",
+      "clue": "5c56849b55d1710b64ff8a29",
+      "answer": "5c56849b55d1710b64ff8a28",
+      "position": "15D"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b65",
+      "clue": "5c56849855d1710b64ff8794",
+      "answer": "5c56849b55d1710b64ff8a2c",
+      "position": "16D"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b64",
+      "clue": "5c56848f55d1710b64ff7835",
+      "answer": "5c56849b55d1710b64ff8a2f",
+      "position": "17D"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b63",
+      "clue": "5c56849b55d1710b64ff8a32",
+      "answer": "5c56849655d1710b64ff82de",
+      "position": "18D"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b62",
+      "clue": "5c56849455d1710b64ff8131",
+      "answer": "5c56849b55d1710b64ff8a35",
+      "position": "19D"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b61",
+      "clue": "5c56849155d1710b64ff79c9",
+      "answer": "5c56849b55d1710b64ff8a38",
+      "position": "20D"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b60",
+      "clue": "5c56848f55d1710b64ff7771",
+      "answer": "5c56849455d1710b64ff7fd9",
+      "position": "21D"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b5f",
+      "clue": "5c56849b55d1710b64ff8a3e",
+      "answer": "5c56849b55d1710b64ff8a3d",
+      "position": "30D"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b5e",
+      "clue": "5c56848f55d1710b64ff7769",
+      "answer": "5c56849b55d1710b64ff8a41",
+      "position": "32D"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b5d",
+      "clue": "5c56848f55d1710b64ff7831",
+      "answer": "5c56849b55d1710b64ff8a44",
+      "position": "35D"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b5c",
+      "clue": "5c56849355d1710b64ff7d49",
+      "answer": "5c56849b55d1710b64ff8a47",
+      "position": "37D"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b5b",
+      "clue": "5c56849455d1710b64ff8175",
+      "answer": "5c56849b55d1710b64ff8a4a",
+      "position": "38D"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b5a",
+      "clue": "5c56848f55d1710b64ff7651",
+      "answer": "5c56849b55d1710b64ff8a4d",
+      "position": "40D"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b59",
+      "clue": "5c56848f55d1710b64ff77a9",
+      "answer": "5c56849b55d1710b64ff8a50",
+      "position": "42D"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b58",
+      "clue": "5c56849b55d1710b64ff8a54",
+      "answer": "5c56849b55d1710b64ff8a53",
+      "position": "43D"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b57",
+      "clue": "5c56849b55d1710b64ff8a58",
+      "answer": "5c56849b55d1710b64ff8a57",
+      "position": "45D"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b56",
+      "clue": "5c56849155d1710b64ff7a2d",
+      "answer": "5c56849155d1710b64ff79e1",
+      "position": "46D"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b55",
+      "clue": "5c56848f55d1710b64ff78a9",
+      "answer": "5c56849b55d1710b64ff8a5d",
+      "position": "47D"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b54",
+      "clue": "5c56849155d1710b64ff7a2d",
+      "answer": "5c56849b55d1710b64ff8a60",
+      "position": "48D"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b53",
+      "clue": "5c56849355d1710b64ff7e99",
+      "answer": "5c56849b55d1710b64ff8a63",
+      "position": "49D"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b52",
+      "clue": "5c56849b55d1710b64ff8a67",
+      "answer": "5c56849b55d1710b64ff8a66",
+      "position": "50D"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b51",
+      "clue": "5c56849455d1710b64ff81fb",
+      "answer": "5c56849b55d1710b64ff8a6a",
+      "position": "51D"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b50",
+      "clue": "5c56849155d1710b64ff7a03",
+      "answer": "5c56849155d1710b64ff7a02",
+      "position": "52D"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b4f",
+      "clue": "5c56849b55d1710b64ff8a70",
+      "answer": "5c56849b55d1710b64ff8a6f",
+      "position": "53D"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b4e",
+      "clue": "5c56849455d1710b64ff81fb",
+      "answer": "5c56849b55d1710b64ff8a73",
+      "position": "54D"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b4d",
+      "clue": "5c56849b55d1710b64ff8a76",
+      "answer": "5c56849155d1710b64ff79cf",
+      "position": "55D"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b4c",
+      "clue": "5c56849b55d1710b64ff8a7a",
+      "answer": "5c56849b55d1710b64ff8a79",
+      "position": "56D"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b4b",
+      "clue": "5c56848f55d1710b64ff7655",
+      "answer": "5c56849b55d1710b64ff8a7d",
+      "position": "60D"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b4a",
+      "clue": "5c56848f55d1710b64ff7835",
+      "answer": "5c56849b55d1710b64ff8a80",
+      "position": "63D"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b49",
+      "clue": "5c56849155d1710b64ff7a2d",
+      "answer": "5c56849155d1710b64ff7a2c",
+      "position": "64D"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b48",
+      "clue": "5c56849b55d1710b64ff8a86",
+      "answer": "5c56849b55d1710b64ff8a85",
+      "position": "65D"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b47",
+      "clue": "5c56848f55d1710b64ff76bd",
+      "answer": "5c56849b55d1710b64ff8a89",
+      "position": "66D"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b46",
+      "clue": "5c56849355d1710b64ff7d61",
+      "answer": "5c56849b55d1710b64ff8a8c",
+      "position": "69D"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b45",
+      "clue": "5c56849b55d1710b64ff8a90",
+      "answer": "5c56849b55d1710b64ff8a8f",
+      "position": "71D"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b44",
+      "clue": "5c56849b55d1710b64ff8a94",
+      "answer": "5c56849b55d1710b64ff8a93",
+      "position": "73D"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b43",
+      "clue": "5c56849b55d1710b64ff8a97",
+      "answer": "5c56849855d1710b64ff85e6",
+      "position": "75D"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b42",
+      "clue": "5c56848f55d1710b64ff7889",
+      "answer": "5c56849b55d1710b64ff8a9a",
+      "position": "76D"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b41",
+      "clue": "5c56849b55d1710b64ff8a9e",
+      "answer": "5c56849b55d1710b64ff8a9d",
+      "position": "77D"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b40",
+      "clue": "5c56848f55d1710b64ff7685",
+      "answer": "5c56849b55d1710b64ff8aa1",
+      "position": "78D"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b3f",
+      "clue": "5c56849b55d1710b64ff8aa5",
+      "answer": "5c56849b55d1710b64ff8aa4",
+      "position": "79D"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b3e",
+      "clue": "5c56849b55d1710b64ff8aa9",
+      "answer": "5c56849b55d1710b64ff8aa8",
+      "position": "80D"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b3d",
+      "clue": "5c56849b55d1710b64ff8aac",
+      "answer": "5c56849455d1710b64ff8035",
+      "position": "81D"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b3c",
+      "clue": "5c56849b55d1710b64ff8ab0",
+      "answer": "5c56849b55d1710b64ff8aaf",
+      "position": "82D"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b3b",
+      "clue": "5c56849855d1710b64ff879f",
+      "answer": "5c56849b55d1710b64ff8ab3",
+      "position": "83D"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b3a",
+      "clue": "5c56849155d1710b64ff79fc",
+      "answer": "5c56849b55d1710b64ff8ab6",
+      "position": "84D"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b39",
+      "clue": "5c56848f55d1710b64ff7645",
+      "answer": "5c56849b55d1710b64ff8ab9",
+      "position": "87D"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b38",
+      "clue": "5c56849855d1710b64ff8636",
+      "answer": "5c56849b55d1710b64ff8abc",
+      "position": "88D"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b37",
+      "clue": "5c56849855d1710b64ff8824",
+      "answer": "5c56849b55d1710b64ff8abf",
+      "position": "89D"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b36",
+      "clue": "5c56849455d1710b64ff81fb",
+      "answer": "5c56849b55d1710b64ff8ac2",
+      "position": "92D"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b35",
+      "clue": "5c56849b55d1710b64ff8ac6",
+      "answer": "5c56849b55d1710b64ff8ac5",
+      "position": "94D"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b34",
+      "clue": "5c56849b55d1710b64ff8aca",
+      "answer": "5c56849b55d1710b64ff8ac9",
+      "position": "96D"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b33",
+      "clue": "5c56848f55d1710b64ff7779",
+      "answer": "5c56849b55d1710b64ff8acd",
+      "position": "98D"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b32",
+      "clue": "5c56849155d1710b64ff7aae",
+      "answer": "5c56849b55d1710b64ff8ad0",
+      "position": "99D"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b31",
+      "clue": "5c56849655d1710b64ff8341",
+      "answer": "5c56849b55d1710b64ff8ad3",
+      "position": "101D"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b30",
+      "clue": "5c56849455d1710b64ff812b",
+      "answer": "5c56849b55d1710b64ff8ad6",
+      "position": "103D"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b2f",
+      "clue": "5c56849b55d1710b64ff8ada",
+      "answer": "5c56849b55d1710b64ff8ad9",
+      "position": "104D"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b2e",
+      "clue": "5c56849b55d1710b64ff8ade",
+      "answer": "5c56849b55d1710b64ff8add",
+      "position": "105D"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b2d",
+      "clue": "5c56849455d1710b64ff81fb",
+      "answer": "5c56849b55d1710b64ff8ae1",
+      "position": "106D"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b2c",
+      "clue": "5c56849b55d1710b64ff8ae5",
+      "answer": "5c56849b55d1710b64ff8ae4",
+      "position": "107D"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b2b",
+      "clue": "5c56849b55d1710b64ff8ae9",
+      "answer": "5c56849b55d1710b64ff8ae8",
+      "position": "108D"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b2a",
+      "clue": "5c56848f55d1710b64ff7675",
+      "answer": "5c56849b55d1710b64ff8aec",
+      "position": "109D"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b29",
+      "clue": "5c56849355d1710b64ff7dba",
+      "answer": "5c56849b55d1710b64ff8aef",
+      "position": "111D"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b28",
+      "clue": "5c56849b55d1710b64ff8af3",
+      "answer": "5c56849b55d1710b64ff8af2",
+      "position": "112D"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b27",
+      "clue": "5c56849b55d1710b64ff8af7",
+      "answer": "5c56849b55d1710b64ff8af6",
+      "position": "113D"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b26",
+      "clue": "5c56849b55d1710b64ff8afb",
+      "answer": "5c56849b55d1710b64ff8afa",
+      "position": "115D"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b25",
+      "clue": "5c56849b55d1710b64ff8aff",
+      "answer": "5c56849b55d1710b64ff8afe",
+      "position": "116D"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b24",
+      "clue": "5c56849b55d1710b64ff8b02",
+      "answer": "5c56849155d1710b64ff7b23",
+      "position": "117D"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b23",
+      "clue": "5c56848f55d1710b64ff7699",
+      "answer": "5c56849b55d1710b64ff8b05",
+      "position": "118D"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b22",
+      "clue": "5c56848f55d1710b64ff76a9",
+      "answer": "5c56849b55d1710b64ff8b08",
+      "position": "121D"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b21",
+      "clue": "5c56849b55d1710b64ff8b0c",
+      "answer": "5c56849b55d1710b64ff8b0b",
+      "position": "122D"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b20",
+      "clue": "5c56849b55d1710b64ff8b10",
+      "answer": "5c56849b55d1710b64ff8b0f",
+      "position": "123D"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b1f",
+      "clue": "5c56849855d1710b64ff8824",
+      "answer": "5c56849b55d1710b64ff8b13",
+      "position": "126D"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b1e",
+      "clue": "5c56849155d1710b64ff7ae3",
+      "answer": "5c56849b55d1710b64ff8b16",
+      "position": "128D"
+    },
+    {
+      "_id": "5c56849b55d1710b64ff8b1d",
+      "clue": "5c56849b55d1710b64ff8b1a",
+      "answer": "5c56849b55d1710b64ff8b19",
+      "position": "130D"
+    }
+  ],
+  "__v": 0
 }
