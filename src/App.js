@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Cell from "./Cell";
+import Clock from "./Clock";
 import crossword from "./crossword.json";
 import {
   buildPlayableBoard,
@@ -17,6 +18,7 @@ const App = () => {
   const [rebusPosition, setRebus] = useState(null);
   const [board, updateBoard] = useState([]);
   const [showAnswers, toggleAnswers] = useState(false);
+  const [playing, togglePlaying] = useState(true);
 
   useEffect(() => {
     let board = buildPlayableBoard(crossword.board);
@@ -174,6 +176,7 @@ const App = () => {
   });
   return (
     <div className="page">
+      <Clock play={playing} onClick={() => togglePlaying(!playing)} />
       <table>
         <tbody className="board">{rows}</tbody>
       </table>
