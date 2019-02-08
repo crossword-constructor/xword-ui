@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Cell from "./Cell";
 import Clock from "./Clock";
 import crossword from "./crossword.json";
+import _throttle from "lodash.throttle";
 import {
   buildPlayableBoard,
   searchForBoundaryCell,
@@ -13,7 +14,7 @@ import "./App.css";
 
 const App = () => {
   const [direction, setDirection] = useState("across");
-  const [wordCoords, setWordCoords] = useState([0, 0]);
+  // const [wordCoords, setWordCoords] = useState([0, 0]);
   const [currentCoords, setCurrentCoords] = useState([0, 0]);
   const [rebusPosition, setRebus] = useState(null);
   const [board, updateBoard] = useState([]);
@@ -33,74 +34,80 @@ const App = () => {
     };
   });
 
-  function keyListener(event) {
-    let newDirection = direction;
-    let code = event.code;
-    let [row, col] = currentCoords;
-    if (code === "Insert") {
-      return setRebus(true);
-      // Check for change of direction
-    } else if (/^[a-z0-9._]+$/i.test(event.key) && event.key.length === 1) {
-      // INSERT GUESS
-      let newBoard = { ...board };
-      newBoard[row][col].guess = event.key;
-      updateBoard(newBoard);
-      // After inserting a letter move to the next position by making this key listener think the arrow key was pressed
-      if (direction === "down") code = "ArrowDown";
-      else code = "ArrowRight"; // @TODO DOn't move if we've reached a black square or the end of the board also we need to skip letters if they're already therr
-    } else if (code === "Backspace") {
-      if (/^[a-z0-9._]+$/i.test(crossword.board[row][col].guess)) {
+  const keyListener = _throttle(
+    function(event) {
+      let newDirection = direction;
+      let code = event.code;
+      let [row, col] = currentCoords;
+      if (code === "Insert") {
+        return setRebus(true);
+        // Check for change of direction
+      } else if (/^[a-z0-9._]+$/i.test(event.key) && event.key.length === 1) {
+        // INSERT GUESS
         let newBoard = { ...board };
-        newBoard[row][col].guess = "";
+        newBoard[row][col].guess = event.key;
         updateBoard(newBoard);
+        // After inserting a letter move to the next position by making this key listener think the arrow key was pressed
+        if (direction === "down") code = "ArrowDown";
+        else code = "ArrowRight"; // @TODO DOn't move if we've reached a black square or the end of the board also we need to skip letters if they're already therr
+      } else if (code === "Backspace") {
+        if (/^[a-z0-9._]+$/i.test(crossword.board[row][col].guess)) {
+          let newBoard = { ...board };
+          newBoard[row][col].guess = "";
+          updateBoard(newBoard);
+        }
+        if (direction === "down") code = "ArrowUp";
+        else code = "ArrowLeft";
+      } else if (code === "Space") {
+        if (direction === "down") code = "ArrowDown";
+        else code = "ArrowRight";
       }
-      if (direction === "down") code = "ArrowUp";
-      else code = "ArrowLeft";
-    } else if (code === "Space") {
-      if (direction === "down") code = "ArrowDown";
-      else code = "ArrowRight";
-    }
-    if (
-      (code === "ArrowRight" || code === "ArrowLeft") &&
-      direction === "down"
-    ) {
-      newDirection = "across";
-    } else if (
-      (code === "ArrowDown" || code === "ArrowUp") &&
-      direction === "across"
-    ) {
-      newDirection = "down";
-    } else if (
-      code === "ArrowRight" ||
-      code === "ArrowLeft" ||
-      code === "ArrowDown" ||
-      code === "ArrowUp"
-    ) {
-      let nextCell = searchForValidCell(
-        row,
-        col,
-        direction,
-        code,
-        crossword.board
-        // settings
-      );
-      let { wordBeg, wordEnd } = setSelected(
-        nextCell[0],
-        nextCell[1],
-        newDirection
-      );
-      setWordCoords([wordBeg, wordEnd]);
-      setCurrentCoords(nextCell);
-      return;
-    }
-    let { wordBeg, wordEnd } = setSelected(row, col, newDirection);
-    setCurrentCoords([row, col]);
-    setDirection(newDirection);
-    setWordCoords([wordBeg, wordEnd]);
+      if (
+        (code === "ArrowRight" || code === "ArrowLeft") &&
+        direction === "down"
+      ) {
+        newDirection = "across";
+      } else if (
+        (code === "ArrowDown" || code === "ArrowUp") &&
+        direction === "across"
+      ) {
+        newDirection = "down";
+      } else if (
+        code === "ArrowRight" ||
+        code === "ArrowLeft" ||
+        code === "ArrowDown" ||
+        code === "ArrowUp"
+      ) {
+        let nextCell = searchForValidCell(
+          row,
+          col,
+          direction,
+          code,
+          crossword.board
+          // settings
+        );
+        let { wordBeg, wordEnd } = setSelected(
+          nextCell[0],
+          nextCell[1],
+          newDirection
+        );
+        // setWordCoords([wordBeg, wordEnd]);
+        setCurrentCoords(nextCell);
+        return;
+      }
+      let { wordBeg, wordEnd } = setSelected(row, col, newDirection);
+      if (newDirection !== direction) {
+        return setDirection(newDirection);
+      }
+      setCurrentCoords([row, col]);
+      // setWordCoords([wordBeg, wordEnd]);
 
-    // console.log('should not see this')
-    // updatePosition(increment, decrement)
-  }
+      // console.log('should not see this')
+      // updatePosition(increment, decrement)
+    },
+    0,
+    { leading: false }
+  );
 
   const setSelected = (row, col, newDirection) => {
     // Toggle direction if clicking active sqaure
@@ -118,7 +125,7 @@ const App = () => {
       "DECREMENT",
       crossword.board
     );
-    return { wordBeg, wordEnd };
+    return [wordBeg, wordEnd];
   };
 
   const clickListener = (rowNum, colNum) => {
@@ -126,13 +133,13 @@ const App = () => {
     if (rowNum === currentCoords[0] && colNum === currentCoords[1]) {
       // toggle direction
       newDirection = direction === "across" ? "down" : "across";
+      return setDirection(newDirection);
     }
-    let { wordBeg, wordEnd } = setSelected(rowNum, colNum, newDirection);
     setCurrentCoords([rowNum, colNum]);
-    setDirection(newDirection);
-    setWordCoords([wordBeg, wordEnd]);
+    // setWordCoords([wordBeg, wordEnd]);
   };
 
+  let wordCoords = setSelected(currentCoords[0], currentCoords[1], direction);
   let rows = Object.keys(board).map((row, rowNum) => {
     return (
       <tr className="row">
